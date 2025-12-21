@@ -18,7 +18,11 @@ export const criar = async (req: Request, res: Response) => {
         // Validar se a data de devolução é futura
         const dataEmprestimo = new Date();
         const dataDevolucao = new Date(dataPrevistaDevolucao + 'T12:00:00');
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 23b0f80bccc0134d738d710987867636e668b445
         if (dataDevolucao <= dataEmprestimo) {
             return res.status(400).send({ message: 'A data de devolução prevista deve ser posterior à data atual' });
         }
