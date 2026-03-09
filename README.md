@@ -2,65 +2,65 @@
 
 Projeto desenvolvido para simular o gerenciamento de uma biblioteca, permitindo realizar operações de cadastro, consulta, atualização e remoção de livros.
 
-A aplicação foi construída utilizando **TypeScript**, **Express**, **React** e **SQLite**, seguindo uma arquitetura com **API backend** e **interface frontend**.
+A aplicação foi construída utilizando **TypeScript**, **Express**, **React**, **Next.js** e **SQLite**, seguindo uma arquitetura com **API backend** e **interface frontend**.
 
-## Objetivo do Projeto
+---
 
-O objetivo do projeto é aplicar conceitos de desenvolvimento web full stack, incluindo:
+# Objetivo do Projeto
+
+O objetivo do projeto é aplicar conceitos de desenvolvimento **web full stack**, incluindo:
 
 * criação de APIs REST
 * integração entre frontend e backend
+* uso do Next.js no frontend
 * manipulação de banco de dados
 * autenticação de usuários (Auth)
 * implementação de operações CRUD
 * organização de rotas e estrutura de projeto
-  
-## Funcionalidades
+
+---
+
+# Funcionalidades
 
 O sistema permite realizar:
 
-- cadastro, edição e remoção de livros
-- cadastro e autenticação de usuários
-- empréstimo de livros
-- controle de devoluções
-- verificação de prazos de empréstimo
-- cálculo de multas por atraso
-  
-## Tecnologias Utilizadas
+* cadastro, edição e remoção de livros
+* cadastro e autenticação de usuários
+* empréstimo de livros
+* controle de devoluções
+* verificação de prazos de empréstimo
+* cálculo de multas por atraso
 
-### Backend
+As operações seguem o padrão **CRUD**:
+
+* **Create** → cadastrar livro
+* **Read** → visualizar livros
+* **Update** → atualizar dados do livro
+* **Delete** → remover livro
+
+---
+
+# Tecnologias Utilizadas
+
+## Backend
 
 * TypeScript
 * Express
 * SQLite
 * Node.js
 
-### Frontend
+## Frontend
 
 * React
+* Next.js
 * TypeScript
-* consumo de API REST
+* Consumo de API REST
 
-## Funcionalidades
+---
 
-O sistema permite realizar as seguintes operações:
+# Estrutura do Projeto
 
-* **Cadastrar livros**
-* **Listar livros cadastrados**
-* **Editar informações de livros**
-* **Excluir livros**
-* **Consulta de dados através da API**
-
-Todas as operações seguem o padrão **CRUD**:
-
-* Create → cadastrar livro
-* Read → visualizar livros
-* Update → atualizar dados do livro
-* Delete → remover livro
-
-## Estrutura do Projeto
-
-### Backend
+## Backend
 
 Responsável por:
 
@@ -68,15 +68,10 @@ Responsável por:
 * conexão com banco de dados SQLite
 * controle das operações CRUD
 * tratamento das requisições HTTP
+* autenticação de usuários
 
-Exemplo de rotas:
 
-GET /livros
-POST /livros
-PUT /livros/:id
-DELETE /livros/:id
-
-### Frontend
+## Frontend
 
 Responsável por:
 
@@ -84,8 +79,11 @@ Responsável por:
 * consumo da API
 * exibição dos livros cadastrados
 * formulários de cadastro e edição
+* interação com o sistema de empréstimos
 
-## Banco de Dados
+---
+
+# Banco de Dados
 
 O projeto utiliza **SQLite**, um banco de dados leve baseado em arquivo, ideal para aplicações simples e projetos acadêmicos.
 
@@ -97,37 +95,43 @@ A tabela principal do sistema armazena informações como:
 * ano de publicação
 * categoria
 
-## Como Executar o Projeto
+Também existem estruturas relacionadas ao **controle de usuários, empréstimos e multas**.
 
-### 1. Clonar o repositório
+---
+
+# Como Executar o Projeto
+
+## 1. Clonar o repositório
 
 git clone <url-do-repositorio>
 
-### 2. Instalar dependências
+## 2. Instalar dependências
 
-Backend:
-
-npm install
-
-Frontend:
+### Backend
 
 npm install
 
-### 3. Executar o backend
+### Frontend
+
+npm install
+
+## 3. Executar o backend
 
 npm run dev
 
-### 4. Executar o frontend
+## 4. Executar o frontend
 
-npm start
+npm run dev
 
-## Observações
+---
 
-Este projeto foi desenvolvido coletivamente como trabalho acadêmico com foco em:
+# Observações
+
+Este projeto foi desenvolvido **coletivamente como trabalho acadêmico**, com foco em:
 
 * prática de desenvolvimento full stack
 * criação de APIs
 * integração com banco de dados
+* implementação de autenticação
+* aplicação de regras de negócio como **empréstimos e multas**
 * organização de rotas e estrutura de código
-
-
