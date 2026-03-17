@@ -12,7 +12,7 @@ import relatorioRoutes from './src/routes/relatorio.routes';
 const app: Application = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000' // Frontend Next.js
+
 };
 
 app.use(cors(corsOptions));
