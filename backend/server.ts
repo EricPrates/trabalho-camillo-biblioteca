@@ -12,7 +12,7 @@ import relatorioRoutes from './src/routes/relatorio.routes';
 const app: Application = express();
 
 const corsOptions = {
-  origin: 'https://trabalho-camillo-biblioteca-ludy-4urej34h8-ericprates-projects.vercel.app', 
+  
 };
 
 app.use(cors(corsOptions));
