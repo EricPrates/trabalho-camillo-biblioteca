@@ -1,4 +1,4 @@
-const API_URL = 'https://trabalho-camillo-biblioteca.onrender.com/';
+const API_URL = 'https://trabalho-camillo-biblioteca.onrender.com';
 
 export const getToken = () => {
   if (typeof window !== 'undefined') {
